@@ -29,9 +29,16 @@ public class StudentApp {
         stu2.setEmail(temp_email);
         stu2.setCourse(temp_course);
 
+        System.out.println("Please enter the third student name: ");
+        temp_name = userInput.nextLine();
+        System.out.println("Please enter the third email: ");
+        temp_email = userInput.nextLine();
+        System.out.println("Please enter the third course: ");
+        temp_course = userInput.nextLine();
+        Student stu3 = new Student(temp_name, temp_email, temp_course);
 
-
-
-
+        System.out.println("Student1:\n" + stu1.getName() + "\n" + stu1.getEmail() + "\n" + stu1.getCourse() + "\n");
+        System.out.println("Student2:\n" + stu2.getName() + "\n" + stu2.getEmail() + "\n" + stu2.getCourse() + "\n");
+        System.out.println("Student2:\n" + stu3.getName() + "\n" + stu3.getEmail() + "\n" + stu3.getCourse() + "\n");
     }
 }
