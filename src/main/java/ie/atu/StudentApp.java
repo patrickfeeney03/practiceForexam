@@ -19,6 +19,16 @@ public class StudentApp {
         stu1.setEmail(temp_email);
         stu1.setCourse(temp_course);
 
+        System.out.println("Please enter the second student name: ");
+        temp_name = userInput.nextLine();
+        System.out.println("Please enter the second email: ");
+        temp_email = userInput.nextLine();
+        System.out.println("Please enter the second course: ");
+        temp_course = userInput.nextLine();
+        Student stu2 = new Student(temp_name);
+        stu2.setEmail(temp_email);
+        stu2.setCourse(temp_course);
+
 
 
 
